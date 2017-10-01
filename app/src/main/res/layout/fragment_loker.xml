@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.myoganugraha.sicentang_sql.home">
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.myoganugraha.sicentang.home">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,4 +13,13 @@
         android:text="Fragment Loker"
         android:textSize="30sp"/>
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/startup">
+    </com.google.android.gms.ads.AdView>
 </RelativeLayout>
